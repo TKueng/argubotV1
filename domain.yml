@@ -1,0 +1,33 @@
+﻿intents:
+   - greet
+   - affirmation
+   - explanation
+   - retrieve
+   - goodbye
+   - submit
+
+actions:
+   - utter_greet
+   - utter_explanation
+   - utter_task
+   - utter_textback
+   - utter_goodbye
+   - action_give_feedback
+
+templates:
+   utter_greet:
+   - text: "Hallo! Ich bin Argubot. Ich werde heute dein digitaler Lernbegleiter sein und dir helfen, überzeugende Texte zu schreiben! Hast du deinen Arbeitauftrag soweit verstanden?"
+   
+   utter_explanation:
+   - text: "Es geht nun darum, dass du deine eigene Meinung zu dem durchgelesenen Text schriftlich darlegst und deine Behauptungen mit überzeugenden Argumenten stützt. Dafür hast du nun 15 Minuten Zeit. Ist die Aufgabenstellung nun klarer geworden?"
+   
+   utter_task:
+   - text: "Super! Verfasse nun deine erste Textversion. Nimm dir dafür einige Minuten Zeit. Let's go!"
+   - text: "Sehr schön! Fangen wir also gleich an. Verfasse nun deine erste Textversion. Dafür hast du nun einige Minuten Zeit. Ready? Go!"
+   
+   utter_textback:
+   - text: "Okay, kopiere dazu einfach den Text den du schon geschrieben hast in die Eingabe-Maske (Control C + Control V) und verbessere deine Argumentation mit Hilfe deines erhaltenen Feedbacks." 
+  
+   utter_goodbye:
+   - text: "Hat Spass gemacht, dich auf deinem Lernweg zu begleiten. Bis bald!"
+   - text: "Weiterhin viel Erfolg!"
