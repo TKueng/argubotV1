@@ -37,6 +37,7 @@
 - Text bitte
 - Kann ich meinen Text verbessern?
 - Verbesserung
+- Verbessern
 - Kann ich meine Text nochmals sehen?
 - Text
 - Ich will meinen Text verbessern
@@ -46,8 +47,8 @@
 ## intent:goodbye
 - Bis bald Argubot
 - Tschau
-- Bye bye
+- Bye bye Argubot
 - Bis bald
-- Tschüss argubot
+- Tschüss Argubot
 - Ich wünsche dir einen schönen Tag
 - Bis zum nächsten Mal
