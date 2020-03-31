@@ -11,6 +11,8 @@ actions:
    - utter_explanation
    - utter_task
    - utter_textback
+   - utter_wait 
+   - utter_buttons
    - utter_goodbye
    - action_give_feedback
 
@@ -20,14 +22,26 @@ templates:
    
    utter_explanation:
    - text: "Es geht nun darum, dass du deine eigene Meinung zu dem durchgelesenen Text schriftlich darlegst und deine Behauptungen mit überzeugenden Argumenten stützt. Dafür hast du nun 15 Minuten Zeit. Ist die Aufgabenstellung nun klarer geworden?"
-   
+
    utter_task:
    - text: "Super! Verfasse nun deine erste Textversion. Nimm dir dafür einige Minuten Zeit. Let's go!"
    - text: "Sehr schön! Fangen wir also gleich an. Verfasse nun deine erste Textversion. Dafür hast du nun einige Minuten Zeit. Ready? Go!"
    
+   utter_wait:
+   - text: "Danke für deinen Input. Ich analysiere gerade deinen Text. Das kann ein paar Sekunden dauern :). " 
+   - text: "Okay dann mach ich mal an die Arbeit und analysiere deinen Input. Please hold on my friend. "   
+
+   utter_buttons:
+   - text: "Willst du den Text nochmals verbessern oder deine Lernsession beenden?"
+     buttons:
+     - title: "Text verbessern"
+       payload: "/retrieve"
+     - title: "Tschüss Argubot"
+       payload: "/goodbye"  
+
    utter_textback:
    - text: "Okay, kopiere dazu einfach den Text den du schon geschrieben hast in die Eingabe-Maske (Control C + Control V) und verbessere deine Argumentation mit Hilfe deines erhaltenen Feedbacks." 
   
    utter_goodbye:
-   - text: "Hat Spass gemacht, dich auf deinem Lernweg zu begleiten. Bis bald!"
-   - text: "Weiterhin viel Erfolg!"
+   - text: "Hat Spass gemacht, dich auf deinem Lernweg zu begleiten. Pass auf dich auf und bleib gesund :)!"
+   - text: "Weiterhin viel Erfolg. Pass auf dich auf und bleib gesund!"
