@@ -4,12 +4,56 @@
 * affirmation
   - utter_task
 * submit
+  - utter_wait
   - action_give_feedback
+  - utter_buttons
 * retrieve
   - utter_textback
 * goodbye
   - utter_goodbye
-   
+
+## greet+affirmation+retrieve+retrieve+farewell
+* greet
+  - utter_greet
+* affirmation
+  - utter_task
+* submit
+  - utter_wait
+  - action_give_feedback
+  - utter_buttons
+* retrieve
+  - utter_textback
+* submit
+  - utter_wait
+  - action_give_feedback
+  - utter_buttons
+* goodbye
+  - utter_goodbye
+
+## greet+affirmation+retrieve+retrieve+retrieve+farewell
+* greet
+  - utter_greet
+* affirmation
+  - utter_task
+* submit
+  - utter_wait
+  - action_give_feedback
+  - utter_buttons
+* retrieve
+  - utter_textback
+* submit
+  - utter_wait
+  - action_give_feedback
+  - utter_buttons
+* retrieve
+  - utter_textback
+* submit
+  - utter_wait
+  - action_give_feedback
+  - utter_buttons
+* goodbye
+  - utter_goodbye
+ 
 ## greet+explanation+affirmation+retrieve+farewell
 * greet
   - utter_greet
@@ -18,9 +62,15 @@
 * affirmation
   - utter_task
 * submit
+  - utter_wait
   - action_give_feedback
+  - utter_buttons
 * retrieve
   - utter_textback
+* submit
+  - utter_wait
+  - action_give_feedback
+  - utter_buttons
 * goodbye
   - utter_goodbye
    
@@ -28,7 +78,9 @@
 * affirmation
   - utter_task
 * submit
+  - utter_wait
   - action_give_feedback
+  - utter_buttons
 * retrieve
   - utter_textback
 * goodbye
