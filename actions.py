@@ -12,7 +12,7 @@ from rasa_sdk.executor import CollectingDispatcher
 class ActionGiveFeedback(Action):
 
     def __init__(self):
-        self.model = Inferencer.load("https://github.com/TKueng/argubotV1/ModelTob")
+        self.model = Inferencer.load("C:\\Users\\tobia\\OneDrive\\Desktop\\arguebot_test\\ModelTob")
 
     def name(self) -> Text:
         return "action_give_feedback"
