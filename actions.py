@@ -12,7 +12,7 @@ from rasa_sdk.executor import CollectingDispatcher
 class ActionGiveFeedback(Action):
 
     def __init__(self):
-        self.model = Inferencer.load("C:\\Users\\tobia\\OneDrive\\Desktop\\arguebot_test\\ModelTob")
+        self.model = Inferencer.load("https://github.com/TKueng/argubotV1/tree/master/ModelTob")
 
     def name(self) -> Text:
         return "action_give_feedback"
@@ -65,13 +65,14 @@ class ActionGiveFeedback(Action):
         if elements[1] > elements[2] or elements[1] < 2:
             if elements[1] < 2:
                 feedback_text += "\n\nIch würde dir empfehlen, deinen Text noch argumentativer zu gestalten. " \
-                                 "Versuche mindestens zwei Claims mit relevanten Premises zu stützen\n"
+                                 "Versuche mindestens zwei Claims mit relevanten Premises zu stützen. \n"
             else:
                 feedback_text += "\n\nIch würde dir empfehlen, deinen Text noch argumentativer zu gestalten. " \
-                                 "Versuche Deine Claims besser mit relevanten Premises zu stützen\n"
+                                 "Versuche Deine Claims besser mit relevanten Premises zu stützen. \n"
         else:
             feedback_text += "\n\nIch empfinde Deine Argumentation als gelungen! " \
-                             "Du hast mehrere Aussagen gemacht und diese mit relevanten Premises gestützt. Weiter so!\n"
+                             "Du hast mehrere Aussagen gemacht und diese mit relevanten Premises gestützt. Weiter so! \n"
+
         return feedback_text
 
     def run(self,
@@ -79,10 +80,8 @@ class ActionGiveFeedback(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        #Todo: Text vom User --> herausfinden, wie du an diesen kommst
         last_utterance = tracker.latest_message["text"]
         elements = self.predict_components(last_utterance) #Todo text muss noch geholt werden
         feedback = self.prepare_feedback(last_utterance, elements) # Todo text muss noch geholt werden
-        #TODO: ausgabe des texts, eventuell kannst du hier return TEXT machen
         dispatcher.utter_message(feedback)
-        return [feedback]
+        return []
