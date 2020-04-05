@@ -48,12 +48,14 @@ class ActionGiveFeedback(Action):
 
     def prepare_feedback(self, text: str, elements: tuple):
         feedback_text = "Hier kommt das Feedback zu Deiner Argumentation, " \
-                        "Claims werden **fett** und Premises _kursiv_ dargestellt:\n\n\n"
+                        "Claims werden __fett__ und Premises _kursiv_ dargestellt:" \
+                        ""\
+                        "\n\n\n"
         before = 0
         for e in elements[0]:
             start = e['start']
             end = e['end']
-            marker = '**' if e['label'] == 'claim' else '_'
+            marker = '__' if e['label'] == 'claim' else '_'
             feedback_text += text[before:start]
             feedback_text += marker
             feedback_text += text[start:end]
