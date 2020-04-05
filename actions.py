@@ -49,7 +49,7 @@ class ActionGiveFeedback(Action):
     def prepare_feedback(self, text: str, elements: tuple):
         feedback_text = "Hier kommt das Feedback zu Deiner Argumentation, " \
                         "Claims werden __fett__ und Premises _kursiv_ dargestellt:" \
-                        ""\
+                        " " \
                         "\n\n\n"
         before = 0
         for e in elements[0]:
