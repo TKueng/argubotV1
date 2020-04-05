@@ -12,7 +12,7 @@ from rasa_sdk.executor import CollectingDispatcher
 class ActionGiveFeedback(Action):
 
     def __init__(self):
-        self.model = Inferencer.load("C:\\Users\\tobia\\OneDrive\\Desktop\\arguebot_test\\ModelTob")
+        self.model = Inferencer.load("/app/actions/ModelTob")
 
     def name(self) -> Text:
         return "action_give_feedback"
@@ -48,12 +48,12 @@ class ActionGiveFeedback(Action):
 
     def prepare_feedback(self, text: str, elements: tuple):
         feedback_text = "Hier kommt das Feedback zu Deiner Argumentation, " \
-                        "Claims werden *fett* und Premises _kursiv_ dargestellt:\n\n\n"
+                        "Claims werden **fett** und Premises _kursiv_ dargestellt:\n\n\n"
         before = 0
         for e in elements[0]:
             start = e['start']
             end = e['end']
-            marker = '*' if e['label'] == 'claim' else '_'
+            marker = '**' if e['label'] == 'claim' else '_'
             feedback_text += text[before:start]
             feedback_text += marker
             feedback_text += text[start:end]
