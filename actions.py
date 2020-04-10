@@ -47,10 +47,7 @@ class ActionGiveFeedback(Action):
 
 
     def prepare_feedback(self, text: str, elements: tuple):
-        feedback_text = "Hier kommt das Feedback zu deiner Argumentation, " \
-                        "Claims werden __fett__ und Premises _kursiv_ dargestellt:" \
-                        " " \
-                        "\n\n\n"
+        feedback_text = ""
         before = 0
         for e in elements[0]:
             start = e['start']
@@ -66,13 +63,16 @@ class ActionGiveFeedback(Action):
 
         if elements[1] > elements[2] or elements[1] < 2:
             if elements[1] < 2:
-                feedback_text += "\n\nIch würde dir empfehlen, deinen Text noch argumentativer zu gestalten. " \
+                feedback_text += "\n\n\n\n" \
+                                 "Ich würde dir empfehlen, deinen Text noch argumentativer zu gestalten. " \
                                  "Versuche mindestens zwei Claims mit relevanten Premises zu stützen. \n"
             else:
-                feedback_text += "\n\nIch würde dir empfehlen, deinen Text noch argumentativer zu gestalten. " \
+                feedback_text += "\n\n\n\n" \
+                                 "Ich würde dir empfehlen, deinen Text noch argumentativer zu gestalten. " \
                                  "Versuche Deine Claims besser mit relevanten Premises zu stützen. \n"
         else:
-            feedback_text += "\n\nIch empfinde Deine Argumentation als gelungen! " \
+            feedback_text += "\n\n\n\n" \
+                             "Ich empfinde Deine Argumentation als gelungen! " \
                              "Du hast mehrere Aussagen gemacht und diese mit relevanten Premises gestützt. Weiter so! \n"
 
         return feedback_text
