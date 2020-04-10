@@ -28,8 +28,7 @@ templates:
    - text: "Sehr schön! Fangen wir also gleich an. Verfasse nun deine erste Textversion. Dafür hast du nun einige Minuten Zeit. Ready? Go!"
    
    utter_wait:
-   - text: "Danke für deinen Input. Ich analysiere gerade deinen Text. Das kann ein paar Sekunden dauern :). " 
-   - text: "Okay dann mach ich mal an die Arbeit und analysiere deinen Input. Please hold on my friend. "   
+   - text: "Hier kommt das Feedback zu deiner Argumentation, Claims/Begrüdungen werden **fett** und Begründungen/Prämissen _kursiv_ dargestellt. "   
 
    utter_buttons:
    - text: "Willst du den Text nochmals verbessern oder deine Lernsession beenden?"
