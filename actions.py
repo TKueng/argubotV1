@@ -64,16 +64,16 @@ class ActionGiveFeedback(Action):
         if elements[1] > elements[2] or elements[1] < 2:
             if elements[1] < 2:
                 feedback_text += "\n\n\n\n" \
-                                 "[ Ich würde dir empfehlen, deinen Text noch argumentativer zu gestalten. ] " \
-                                 "[ Versuche mindestens zwei Claims mit relevanten Premises zu stützen. ] \n"
+                                 "[ Ich würde dir empfehlen, deinen Text noch argumentativer zu gestalten. ]() " \
+                                 "[ Versuche mindestens zwei Claims mit relevanten Premises zu stützen. ]() \n"
             else:
                 feedback_text += "\n\n\n\n" \
-                                 "[ Ich würde dir empfehlen, deinen Text noch argumentativer zu gestalten. ]" \
-                                 "[ Versuche Deine Claims besser mit relevanten Premises zu stützen. ] \n"
+                                 "[ Ich würde dir empfehlen, deinen Text noch argumentativer zu gestalten. ]()" \
+                                 "[ Versuche Deine Claims besser mit relevanten Premises zu stützen. ]() \n"
         else:
             feedback_text += "\n\n\n\n" \
-                             "[ Ich empfinde Deine Argumentation als gelungen!] " \
-                             "[ Du hast mehrere Aussagen gemacht und diese mit relevanten Premises gestützt. Weiter so! ]\n"
+                             "[ Ich empfinde Deine Argumentation als gelungen!]() " \
+                             "[ Du hast mehrere Aussagen gemacht und diese mit relevanten Prämissen gestützt. Weiter so! ]()\n"
 
         return feedback_text
 
