@@ -87,3 +87,47 @@ class ActionGiveFeedback(Action):
         feedback = self.prepare_feedback(last_utterance, elements) # Todo text muss noch geholt werden
         dispatcher.utter_message(feedback)
         return []
+
+class ActionGiveScore(Action):
+
+    def name(self) -> Text:
+        return "action_give_score"
+
+    def get_number_of_sentences(self, text):
+        nlp = spacy.load('de_core_news_sm')
+        doc = nlp(text)
+        sentences = [sent.string.strip() for sent in doc.sents]
+
+        return len(sentences)
+
+    def count_syllables(self, token:str):
+        dic = pyphen.Pyphen(lang='de')
+        split_token = dic.inserted(token)
+        syllables = split_token.split("-")
+        return len(syllables)
+
+    def fre_german(self, text):
+        count_tok = 0
+        count_s = 0
+        for token in text:
+            count_tok +=1
+            count_s = count_s + self.count_syllables(token)
+
+        number_of_sentences = self.get_number_of_sentences(text)
+
+
+        asw = count_s / count_tok
+        asl = count_tok / number_of_sentences
+
+        fre = (206.835 - (1.015 * asl) - (84.6 * asw))
+        fre_1= round(fre,2)
+        return fre_1
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        last_utterance = tracker.latest_message["text"]
+        score=self.fre_german(last_utterance)
+        dispatcher.utter_message(" Dein Readability Score beträgt: {}".format(score))
+        return []
