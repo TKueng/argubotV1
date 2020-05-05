@@ -8,6 +8,8 @@ from farm.infer import Inferencer
 from rasa_sdk import Action, Tracker
 from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
+import spacy
+import pyphen
 
 class ActionGiveFeedback(Action):
 
