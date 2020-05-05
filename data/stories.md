@@ -6,6 +6,7 @@
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * retrieve
   - utter_textback
@@ -20,12 +21,14 @@
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * retrieve
   - utter_textback
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * goodbye
   - utter_goodbye
@@ -38,18 +41,21 @@
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * retrieve
   - utter_textback
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * retrieve
   - utter_textback
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * goodbye
   - utter_goodbye
@@ -64,12 +70,14 @@
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * retrieve
   - utter_textback
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * goodbye
   - utter_goodbye
@@ -80,6 +88,7 @@
 * submit
   - utter_wait
   - action_give_feedback
+  - action_give_score
   - utter_buttons
 * retrieve
   - utter_textback
@@ -120,12 +129,14 @@
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
     - utter_buttons
 * retrieve
     - utter_textback
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
     - utter_buttons
 * goodbye
     - utter_goodbye
@@ -146,12 +157,14 @@
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
     - utter_buttons
 * retrieve
     - utter_textback
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
     - utter_buttons
 * goodbye
     - utter_goodbye
@@ -405,3 +418,18 @@
     - utter_wait
     - action_give_feedback
     - utter_buttons
+
+## Untitled Story
+* greet
+  - utter_greet
+* affirmation
+  - utter_task
+* submit
+  - utter_wait
+  - action_give_feedback
+  - action_give_score
+  - utter_buttons
+* retrieve
+  - utter_textback
+* goodbye
+  - utter_goodbye
