@@ -1,435 +1,1885 @@
-## greet+affirmation+retrieve+farewell
-* greet
-  - utter_greet
-* affirmation
-  - utter_task
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* retrieve
-  - utter_textback
-* goodbye
-  - utter_goodbye
-
-## greet+affirmation+retrieve+retrieve+farewell
-* greet
-  - utter_greet
-* affirmation
-  - utter_task
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* retrieve
-  - utter_textback
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* goodbye
-  - utter_goodbye
-
-## greet+affirmation+retrieve+retrieve+retrieve+farewell
-* greet
-  - utter_greet
-* affirmation
-  - utter_task
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* retrieve
-  - utter_textback
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* retrieve
-  - utter_textback
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* goodbye
-  - utter_goodbye
-
-## greet+explanation+affirmation+retrieve+farewell
-* greet
-  - utter_greet
-* explanation
-  - utter_explanation
-* affirmation
-  - utter_task
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* retrieve
-  - utter_textback
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* goodbye
-  - utter_goodbye
-
-## affirmation+retrieve+farewell
-* affirmation
-  - utter_task
-* submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* retrieve
-  - utter_textback
-* goodbye
-  - utter_goodbye
-
-## wish
+## New Story
 
 * greet
     - utter_greet
 * explanation
     - utter_explanation
+    - utter_buttons_start
 * affirmation
     - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## New Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
     - utter_buttons
 * retrieve
-    - utter_textback
+    - utter_retrieve
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
     - utter_buttons
 * goodbye
     - utter_goodbye
 * wish
     - utter_flattered
 
-## chitchat 1
+## Untitled Story
 
 * greet
     - utter_greet
 * explanation
     - utter_explanation
+    - utter_buttons_start
 * affirmation
     - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
 * submit
     - utter_wait
     - action_give_feedback
     - action_give_score
+    - utter_flesch
     - utter_buttons
-* retrieve
-    - utter_textback
-* submit
-    - utter_wait
-    - action_give_feedback
-    - action_give_score
-    - utter_buttons
-* goodbye
-    - utter_goodbye
-* chitchat
-    - utter_chitchat
+* theory
+    - utter_theory
     - utter_buttons
 * goodbye
     - utter_goodbye
 
-## chitchat
+## Untitled Story
 
 * greet
     - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
 * explanation
     - utter_explanation
+    - utter_buttons_start
 * affirmation
     - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
 * submit
     - utter_wait
     - action_give_feedback
     - action_give_score
+    - utter_flesch
     - utter_buttons
-* retrieve
-    - utter_textback
-* submit
-    - utter_wait
-    - action_give_feedback
-    - action_give_score
+* theory
+    - utter_theory
     - utter_buttons
 * goodbye
     - utter_goodbye
-* chitchat
-    - utter_chitchat
-    - utter_buttons
-* goodbye
-    - utter_goodbye
+* joke
+    - utter_joke
 
-## Insult
+## Untitled Story
 
 * greet
     - utter_greet
-* explanation
-    - utter_explanation
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
 * affirmation
     - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
     - utter_buttons
 * goodbye
     - utter_goodbye
 * handleinsult
     - utter_handleinsult
 
-## Joke
+## submit2
 
 * greet
     - utter_greet
 * explanation
     - utter_explanation
+    - utter_buttons_start
 * affirmation
     - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
     - utter_buttons
 * retrieve
     - utter_textback
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
     - utter_buttons
 * goodbye
     - utter_goodbye
-* joke
-    - utter_joke
+* wish
+    - utter_flattered
 
-## New Story
+## Untitled Story
 
 * greet
     - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
 * explanation
     - utter_explanation
+    - utter_buttons_start
 * affirmation
     - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
     - utter_buttons
-* goodbye
-    - utter_goodbye
-* wish
-    - utter_flattered
-* chitchat
-    - utter_chitchat
+* theory
+    - utter_theory
     - utter_buttons
-* retrieve
+* retrieve 
     - utter_textback
 * submit
     - utter_wait
     - action_give_feedback
-    - utter_buttons
-* goodbye
-    - utter_goodbye
-* goodbye
-    - utter_goodbye
-
-## New Story
-
-* greet
-    - utter_greet
-* affirmation
-    - utter_task
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* retrieve
-    - utter_textback
-* submit
-    - utter_wait
-    - action_give_feedback
+    - action_give_score
+    - utter_flesch
     - utter_buttons
 * goodbye
     - utter_goodbye
 * handleinsult
     - utter_handleinsult
-* chitchat
-    - utter_chitchat
-    - utter_buttons
-* goodbye
-    - utter_goodbye
 
-## New Story
+## Untitled Story
 
-* joke
-    - utter_joke
+* greet
+    - utter_greet
 * affirmation
     - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
     - utter_buttons
-* retrieve
+* retrieve 
     - utter_textback
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
     - utter_buttons
-* goodbye
-    - utter_goodbye
-* joke
-    - utter_joke
-* joke
-    - utter_chitchat
+* theory
+    - utter_theory
     - utter_buttons
-* goodbye
-
-## New Story
-
-* greet
-    - utter_greet
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* retrieve
+* retrieve 
     - utter_textback
 * submit
     - utter_wait
     - action_give_feedback
+    - action_give_score
+    - utter_flesch
     - utter_buttons
 * goodbye
     - utter_goodbye
-* wish
-    - utter_flattered
-* joke
-    - utter_joke
-
-## New Story
-
-* greet
-    - utter_greet
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* retrieve
-    - utter_textback
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* goodbye
-    - utter_goodbye
-* wish
-    - utter_flattered
 * handleinsult
     - utter_handleinsult
-* joke
-    - utter_joke
-* joke
-    - utter_joke
-* chitchat
-    - utter_chitchat
-    - utter_buttons
-* goodbye
-    - utter_goodbye
-
-## New Story
-
-* greet
-    - utter_greet
-* affirmation
-    - utter_task
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* retrieve
-    - utter_textback
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* goodbye
-    - utter_goodbye
-* chitchat
-    - utter_chitchat
-    - utter_buttons
-
-## New Story
-
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* retrieve
-    - utter_textback
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* retrieve
-    - utter_textback
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* goodbye
-    - utter_goodbye
-* wish
-    - utter_flattered
-* handleinsult
-    - utter_handleinsult
-
-## New Story
-
-* greet
-    - utter_greet
-* explanation
-    - utter_explanation
-* affirmation
-    - utter_task
-* submit
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
-* goodbye
-    - utter_goodbye
-
-## Story from conversation with 09c67305-fabf-4051-8329-d826c857be7d on April 16th 2020
-
-* greet
-    - utter_greet
-* affirmation
-    - utter_task
-* greet
-    - utter_wait
-    - action_give_feedback
-    - utter_buttons
 
 ## Untitled Story
 * greet
-  - utter_greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
 * affirmation
-  - utter_task
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
 * submit
-  - utter_wait
-  - action_give_feedback
-  - action_give_score
-  - utter_buttons
-* retrieve
-  - utter_textback
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve 
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve 
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
 * goodbye
-  - utter_goodbye
+    - utter_goodbye
+* wish
+    - utter_wish
+
+## New Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve 
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve 
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve 
+    - utter_retrieve
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+* joke
+    - utter_joke
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start    
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_retrieve
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_retrieve
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* handleinsult
+    - utter_handleinsult
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## Untitled 
+
+* joke
+   - utter_joke
+* chitchat
+   - utter_chitchat
+   - utter_buttons
+* retrieve
+   - utter_textback
+* explanation
+    - utter_explanation
+    - utter_buttons_start    
+* affirmation
+   - utter_task
+* submitfraub
+   - utter_taskherra
+* submitherra
+   - utter_copy
+* submit
+   - utter_wait
+   - action_give_feedback
+   - action_give_score
+   - utter_flesch
+   - utter_buttons
+* theory
+   - utter_theory
+   - utter_buttons
+* retrieve
+   - utter_textback
+* submit
+   - utter_wait
+   - action_give_feedback
+   - action_give_score
+   - utter_flesch
+   - utter_buttons
+* goodbye
+   - utter_goodbye
+* wish
+   - utter_flattered
+* handleinsult
+   - utter_handleinsult
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+  - utter_taskherra
+* submitherra
+  - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* handleinsult
+    - utter_handleinsult
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+  - utter_taskherra
+* submitherra
+  - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* handleinsult
+    - utter_handleinsult
+
+## New Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* handleinsult
+    - utter_handleinsult
+
+## New Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submitfraub
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## New Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submitfraub
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitfraub
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitfraub
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## New Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* joke
+    - utter_joke
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+
+## New Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+* joke
+    - utter_joke
+
+## New Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish 
+    - utter_flattered
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish 
+    - utter_flattered
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish 
+    - utter_flattered
+* joke 
+    - utter_joke
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish 
+    - utter_flattered
+* joke 
+    - utter_joke
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start    
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet   
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish 
+    - utter_flattered
+* joke 
+    - utter_joke
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye 
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* handleinsult
+    - utter_handleinsult
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye 
+    - utter_goodbye
+* joke
+    - utter_joke
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye 
+    - utter_goodbye
+* joke
+    - utter_joke
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## Untitled Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye 
+    - utter_goodbye
+* joke
+    - utter_joke
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+
+## New Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+
+## New Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start    
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## New Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start    
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+* goodbye
+    - utter_joke
+
+## New Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+* goodbye
+    - utter_joke
+
+## New Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start    
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitfraub
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* goodbye
+    - utter_flattered
+
+## New Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start    
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## New Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## New Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start    
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## New Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submitfraub
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitfraub
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitfraub
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+* joke
+    - utter_joke
+
+## New Story
+
+* greet
+    - utter_greet
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* goodbye
+    - utter_goodbye
+
+## New Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+* chitchat
+    - utter_chitchat
+    - utter_buttons
+
+## New Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## New Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+
+## New Story
+
+* greet
+    - utter_greet
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submitherra
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* theory
+    - utter_theory
+    - utter_buttons
+* retrieve
+    - utter_textback
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye
+* wish
+    - utter_flattered
+
+## New Story
+
+* greet
+    - utter_greet
+* explanation
+    - utter_explanation
+    - utter_buttons_start
+* argumenttheory
+    - utter_argumenttheory
+    - utter_buttons_start
+* affirmation
+    - utter_task
+* submitfraub
+    - utter_taskherra
+* submitherra
+    - utter_copy
+* submit
+    - utter_wait
+    - action_give_feedback
+    - action_give_score
+    - utter_flesch
+    - utter_buttons
+* goodbye
+    - utter_goodbye

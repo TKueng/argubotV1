@@ -1,4 +1,5 @@
 intents:
+- argumenttheory
 - greet
 - affirmation
 - explanation
@@ -9,32 +10,45 @@ intents:
 - chitchat
 - joke
 - handleinsult
+- submitherra
+- submitfraub
+- theory
 templates:
   utter_greet:
-  - text: Hallo! Ich bin Argubot. Ich werde heute dein digitaler Lernbegleiter sein
-      und dir helfen, überzeugende Texte zu schreiben! Hast du deinen Arbeitauftrag
-      soweit verstanden?
+  - text: Hallo! Ich bin ArgueTutor. Ich werde heute dein digitaler Lernbegleiter
+      sein und dir helfen, überzeugende Texte zu schreiben! Willst du dazu einen kurzen
+      Theorie-Input lesen, deinen Arbeitsauftrag nochmals durchgehen oder gleich mit
+      dem Schreiben deines Textes beginnen?
+    buttons:
+    - title: Theorie-Input
+      payload: /argumenttheory
+    - title: Arbeitsauftrag
+      payload: /explanation
+    - title: Text schreiben
+      payload: /affirmation
   utter_explanation:
-  - text: Du hast nun 15 Minuten Zeit, um die Aussagen von Frau B und Herrn A zu untersuchen.
-      Was für Stärken und Schwächen siehst Du in ihren Statements? Was könnte man
-      verbessern? Schreibe dazu bitte ein Review, in dem Du persönlich auf die Stärken
-      und Schwäche der beiden eingehst. Versuche das Review möglichst stichhaltig
-      und überzeugend zu schreiben. Ist die Aufgabenstellung nun klarer geworden?
+  - text: 'Du hast nun 15 Minuten Zeit, um die Aussagen von Frau B und Herrn A zu
+      untersuchen. Was für Stärken und Schwächen siehst Du in ihren Statements? Was
+      könnte man verbessern? Schreibe dazu bitte ein Review, in dem Du persönlich
+      auf die Stärken und Schwäche der beiden eingehst. Versuche das Review möglichst
+      stichhaltig und überzeugend zu schreiben. '
   utter_task:
-  - text: Super! Verfasse nun deine erste Textversion. Nimm dir dafür einige Minuten
-      Zeit. Let's go!
-  - text: Sehr schön! Fangen wir also gleich an. Verfasse nun deine erste Textversion.
-      Dafür hast du nun einige Minuten Zeit. Ready? Go!
+  - text: Sehr schön! Fangen wir also gleich an.  Schreibe nun zuerst dein Feedback
+      zur Argumentation von __Frau B__. Dafür hast du nun einige Minuten Zeit. Ready?
+      Go!
   utter_wait:
   - text: 'Hier kommt das Feedback zu deiner Argumentation, **Claims/Thesen**  werden
       **fett** und _Begründungen/Prämissen_ _kursiv_ , und das [Feedback]() des Chatbots
       [unterstrichen]() dargestellt. '
   utter_buttons:
-  - text: Willst du den Text nochmals verbessern oder deine Lernsession beenden?
+  - text: Willst du dein persönliches Feedback besser verstehen, deinen Text verbessern
+      oder deine Lernsession beenden?
     buttons:
+    - title: Theorie-Erklärung
+      payload: /theory
     - title: Text verbessern
       payload: /retrieve
-    - title: Tschüss Argubot
+    - title: Tschüss ArgueTutor
       payload: /goodbye
   utter_textback:
   - text: Okay, kopiere dazu einfach den Text den du schon geschrieben hast in die
@@ -56,6 +70,32 @@ templates:
   - text: Warum essen die Franzosen so gerne Schnecken? - Sie vertragen kein Fastfood.
   utter_handleinsult:
   - text: Heey, das ist nicht sehr nett😢
+  utter_taskherra:
+  - text: Vielen Dank für deine Zeilen. Du erhälst dein Feedback zu einem späteren
+      Schritt. Schreibe zuerst bitte dein Review zu der Argumentation von __Herr A__.
+      Nimm dir dafür wieder einige Minuten Zeit.
+  utter_copy:
+  - text: Sehr schön. Kopiere nun die beiden Texte (Control C + Control V) in die
+      Eingabe-Maske und klicke auf Enter, um dein Feedback zu erhalten.
+  utter_theory:
+  - text: Klicke auf den folgenden [Link](https://www.dropbox.com/s/nti0h8lmdb8mf5u/Theorie%20Flesch-Score.pdf?dl=0),
+      um mehr zu deinem individuellem Feedback zu erfahren.
+  utter_flesch:
+  - text: 'Ein Readability-Score von __<40__ ist eher schwer verständlich. Zwischen
+      __41-60__ ist ein Text  gut und über __>61__ sehr einfach zu lesen . '
+  utter_argumenttheory:
+  - text: 'Dieser [Link] (https://www.dropbox.com/s/nti0h8lmdb8mf5u/Theorie%20Flesch-Score.pdf?dl=0)
+      führt dich zu Theorie. '
+  utter_buttons_start:
+  - text: Willst du einen kurzen Theorie-Input lesen, deinen Arbeitsauftrag nochmals
+      durchgehen oder gleich mit dem Schreiben deines Textes beginnen?
+    buttons:
+    - title: Theorie-Input
+      payload: /argumenttheory
+    - title: Arbeitsauftrag
+      payload: /explanation
+    - title: Text schreiben
+      payload: /affirmation
 actions:
 - utter_greet
 - utter_explanation
@@ -69,3 +109,12 @@ actions:
 - utter_chitchat
 - utter_joke
 - utter_handleinsult
+- action_give_score
+- utter_taskherra
+- utter_copy
+- utter_theory
+- utter_retrieve
+- utter_wish
+- utter_flesch
+- utter_argumenttheory
+- utter_buttons_start
